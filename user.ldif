@@ -1,0 +1,32 @@
+
+# User group
+
+cn: ou=uk,dc=appd,dc=com
+ou: uk
+objectClass: top
+objectclass: organizationalunit
+
+dn: cn=naomi,ou=uk,dc=appd,dc=com
+cn: naomi
+objectClass: top
+objectClass: posixGroup
+gidNumber: 10000
+
+
+dn: uid=noami,ou=uk,dc=appd,dc=com
+cn: Naomi O
+givenName: Naomi
+sn: O
+uid: naomi1
+uidNumber: 10000
+gidNumber: 10000
+homeDirectory: /home/naomi
+mail: naomi@appd.com
+objectClass: top
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+loginShell: /bin/bash
+userPassword: appdynamics

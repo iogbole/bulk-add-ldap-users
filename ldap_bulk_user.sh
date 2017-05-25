@@ -14,7 +14,7 @@ LDIF="/tmp/bulkuser.ldif"
 
 
 ldapadd -cxD cn=admin,dc=appd,dc=com -f user.ldif -w $PASSWD
-
+# specify the range. For example, 1 - 20  will create 20 users. 
 for i in $(seq 1 3); do
         echo "dn: uid=$USERNAME$i,ou=uk,dc=appd,dc=com" > $LDIF
         echo "cn: Drake Smith$i" >> $LDIF

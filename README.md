@@ -1,8 +1,7 @@
 # Bulk Add LDAP users 
 Steps: 
 1. Clone the repo 
-2. Ensure the shell script and the ldif file are in the directory 
-3. Edit the shell script by adding your LDAP server credentials 
+3. Add your LDAP server credentials in the shell script  
 4. Make the script executabale : chmod +x <script_name>.sh 
 5. Run the script 
 
